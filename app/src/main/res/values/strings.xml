@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">MapaEstaciones</string>
     <string name="title_activity_maps">Map</string>
+    <string name="Nombre">Nombre</string>
+    <string name="empresa">Empresa</string>
+    <string name="departamento">Departamento</string>
+    <string name="municipio">Municipio</string>
 </resources>
