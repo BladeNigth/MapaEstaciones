@@ -139,7 +139,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/agregar"
+        android:id="@+id/btnagregar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -147,7 +147,7 @@
         android:text="Agregar estacion de Gasolina" />
 
     <Button
-        android:id="@+id/Mapa"
+        android:id="@+id/btnmapa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"

@@ -64,14 +64,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Cursor Vista = gc.allContadores();
         if( Vista != null){
             Vista.moveToFirst();
-            LatLng latitudes = new LatLng(Double.parseDouble(Vista.getString(5)), Double.parseDouble(Vista.getString(4)));
-            mMap.addMarker(new MarkerOptions()
-                            .position(latitudes)
-                            .title(Vista.getString(0)+","+  Vista.getString(1))
-                            .snippet(Vista.getString(2)+", "+ Vista.getString(3))
-                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latitudes,6));
+           do{
+               LatLng latitudes = new LatLng(Double.parseDouble(Vista.getString(5)), Double.parseDouble(Vista.getString(4)));
+               mMap.addMarker(new MarkerOptions()
+                       .position(latitudes)
+                       .title(Vista.getString(0)+","+  Vista.getString(1))
+                       .snippet(Vista.getString(2)+", "+ Vista.getString(3))
+                       .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+               mMap.moveCamera(CameraUpdateFactory.newLatLng(latitudes));
+           }while (Vista.moveToNext());
             //CameraUpdateFactory.zoomIn();
         }
     }
