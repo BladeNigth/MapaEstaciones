@@ -5,4 +5,6 @@
     <string name="empresa">Empresa</string>
     <string name="departamento">Departamento</string>
     <string name="municipio">Municipio</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
 </resources>
